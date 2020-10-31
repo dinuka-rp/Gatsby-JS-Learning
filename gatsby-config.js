@@ -28,8 +28,8 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 750,  // maxWidth of an image
-              linkImagesToOriginal:false    // to prevent clicking images to redirect to the actual location of the image
+              maxWidth: 750, // maxWidth of an image
+              linkImagesToOriginal: false, // to prevent clicking images to redirect to the actual location of the image
             },
           },
         ],
