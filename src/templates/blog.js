@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import Head from "../components/head"
 
 // this will be provided as props to the component when gatsby loads the component
 export const query = graphql`
@@ -18,6 +19,7 @@ export const query = graphql`
 const Blog = props => {
   return (
     <Layout>
+      <Head title={props.data.markdownRemark.frontmatter.title}/>
       <h1>{props.data.markdownRemark.frontmatter.title}</h1>
       <p>{props.data.markdownRemark.frontmatter.date}</p>
 

@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import blogStyles from "./blog.module.scss"
+import Head from "../components/head"
 
 const BlogPage = () => {
   // get data from markdown files in file system
@@ -27,6 +28,8 @@ const BlogPage = () => {
 
   return (
     <Layout>
+      <Head title="Blog" />
+
       <h1>Blog</h1>
       {/* <p>Posts will show up here later on.</p> */}
       <ol className={blogStyles.posts}>
